@@ -1,11 +1,13 @@
 import React from 'react'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout/Layout'
 
 const BlogPage = (props) => {
     return(
         <div>
-            <span>Blog</span>
-            <Footer />
+            <Layout>
+                <span>Blog</span>
+            </Layout>
+            
         </div>
     )
 }

@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import Footer from '../components/Footer'
+import Layout from '../components/Layout/Layout'
 
 const AboutPage = (props) => {
     return(
         <div>
-            <p>This is the about page! Wooohooo</p>
-            <Link to="/contact">Contact me</Link>
-            <Footer />
+            <Layout>
+                <p>This is the about page! Wooohooo</p>
+            </Layout>
         </div>
     )
 }

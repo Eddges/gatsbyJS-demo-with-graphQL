@@ -1,9 +1,13 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer'
 
 const IndexPage = (props) => {
   return(
     <div>
-      Hello world
+      <Navbar />
+      <p>Welcome</p>
+      <Footer />
     </div>
   )
 }
