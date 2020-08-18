@@ -1,9 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 const BlogPage = (props) => {
     return(
         <div>
-            Blog
+            <span>Blog</span>
+            <Footer />
         </div>
     )
 }

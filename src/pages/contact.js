@@ -1,9 +1,11 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 const ContactPage = (props) => {
     return(
         <div>
-            Are you here to contact me?
+            <span>Reach me at shivamshekhar.i7@gmail.com</span>
+            <Footer />
         </div>
     )
 }
