@@ -1,0 +1,16 @@
+.Container {
+  width: 100%;
+  padding: 30px 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Container .Welcome {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=blog.module.css.map */
