@@ -47,7 +47,7 @@ const BlogPage = (props) => {
         <div>
             <Layout>
                 <div className={classes.Container}>
-                    <span className={classes.Welcome}>Welcome to the Blog</span>
+                    <span className={classes.Welcome}>Blogs</span>
                     {/* <button onClick={() => { console.log(blogData.allMarkdownRemark.edges) }}>Click</button> */}
                     <div className={classes.Posts} id="Posts">
                         {/* {blog} */}
