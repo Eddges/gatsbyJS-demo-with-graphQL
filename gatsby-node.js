@@ -1,24 +1,15 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require('path')
 
-// You can delete this file if you're not using it
+module.exports.onCreateNode = ({node, actions}) => {
+    const { createNodeField } = actions
 
-// const path = require('path')
-
-// module.exports.onCreateNode = ({node, actions}) => {
-//     const { createNodeField } = actions
-
-//     if(node.internal.type==='MarkdownRemark'){
-//         const slug = path.basename(node.fileAbsolutePath, '.md')
-//         console.log('@@@@@@@@@@@@@@@@@@', slug)
-
-//         createNodeField({
-//             node, 
-//             name : 'slug',
-//             value : slug
-//         })
-//     }
-// }
+    if(node.internal.type === 'MarkdownRemark') {
+        const slug = path.basename(node.fileAbsolutePath, '.md')
+        console.log('@@@@@@@@@@@@@@@', slug)
+        createNodeField({
+            node,
+            name : 'slug',
+            value : slug
+        })
+    }
+}
